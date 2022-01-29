@@ -10,7 +10,6 @@ npm install merge-gpx-files-delf01 --save
 ```
 
 ## Example
-These properties are required. 
 
 ```javascript
 // Params obj
