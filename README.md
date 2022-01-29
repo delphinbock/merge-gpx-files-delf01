@@ -34,4 +34,4 @@ const metaDataObj = {
 const mergeGpxFiles = require('merge-gpx-files-delf01');
 ```
 
-> `merge-gpx-files-delf01` uses properties objects. Object property values ​​are required. Leave the value blank if you don't want to use it..
+> Object property values ​​are required. Leave the value blank if you don't want to use it..
