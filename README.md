@@ -25,13 +25,13 @@ By default leave utf8.
 8. Configure metadata settings object. Metadata is added to the merged gpx file.
 Set the property called  'encodageGpxFile' of the settings object called 'paramsObj'.
 Property:
-`nameCreatorGpxFile` => name of gpx file creator name
-`nameTrackGpxFile` => track name
-`descriptionTrackGpxFile` => description of the route
-`authorTrackGpxFile` => track creator name
-`licenseTrackGpxFile` => license
-`timeTrackGpxFile` => date and time the file was created
-`keywordsTrackGpxFile` => keywords, each keyword must be separated by a comma
+`nameCreatorGpxFile` => name of gpx file creator name, 
+`nameTrackGpxFile` => track name, 
+`descriptionTrackGpxFile` => description of the route, 
+`authorTrackGpxFile` => track creator name, 
+`licenseTrackGpxFile` => license, 
+`timeTrackGpxFile` => date and time the file was created, 
+`keywordsTrackGpxFile` => keywords, each keyword must be separated by a comma, 
 
 9. Import the module `const mergeGpxFilesDelf01 = require('merge-gpx-files-delf01');`
 
