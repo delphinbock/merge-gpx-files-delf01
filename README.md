@@ -42,7 +42,7 @@ Output -> On success => object => {minFile: minFileContentString, file: fileCont
 
 11. The two merged files (indented and minified) is now in the results folder configured in step 5.
 
-## Example
+## Example 1
 
 ```javascript
 // Params object
@@ -68,9 +68,45 @@ const metaDataObj = {
 const mergeGpxFilesDelf01 = require('merge-gpx-files-delf01');
 
 // Run function
-let mergeSingleFile = await mergeGpxFilesDelf01.mergeGpxFiles(paramsObj, metaDataObj);
+mergeGpxFilesDelf01.mergeGpxFiles(paramsObj, metaDataObj);
 
-// Output -> On success => object => {minFile: minFileContentString, file: fileContentString}, On error => boolean => false
-console.log(mergeSingleFile);
+```
+## Example 2
+
+```javascript
+// Params object
+const paramsObj = {
+    nameSingleGpxFile: `singleFile`, 
+    nameDirectoryGpxFiles: `gpx_files`,
+    nameDirectorySingleGpxFiles: `single_files`,
+    encodageGpxFile: `utf8`
+}
+
+// Metadata object
+const metaDataObj = {
+    nameCreatorGpxFile: `delf01`,
+    nameTrackGpxFile: `Santiago to Nordkapp`,
+    descriptionTrackGpxFile: `Pilgrims Route gpx file`,
+    authorTrackGpxFile: `delf01`,
+    licenseTrackGpxFile: `GNU General Public License`,
+    timeTrackGpxFile: new Intl.DateTimeFormat('en-US', { dateStyle: 'full', timeStyle: 'long' }).format(new Date(Date.UTC(2020, 11, 20, 3, 23, 16, 738))),
+    keywordsTrackGpxFile: `pilgrims, gpx, route, spain`
+}
+
+// NPM
+const mergeGpxFilesDelf01 = require('merge-gpx-files-delf01');
+
+// Run async function
+const runFunction = async () => {
+
+    let mergeSingleFile = await mergeGpxFilesDelf01.mergeGpxFiles(paramsObj, metaDataObj);
+
+    // Output -> On success => object => {minFile: minFileContentString, file: fileContentString}, On error => boolean => false
+    console.log(mergeSingleFile);
+
+    return mergeSingleFile;
+}
+
+runFunction();
 
 ```
