@@ -1,0 +1,1 @@
+declare module 'merge-gpx-files-delf01';

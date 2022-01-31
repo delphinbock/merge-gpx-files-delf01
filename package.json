@@ -1,0 +1,57 @@
+{
+  "_from": "merge-gpx-files-delf01@^1.0.1",
+  "_id": "merge-gpx-files-delf01@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-kx6PVtIO/pJST9vYfneudKAfYOtMfKrs1omriwUI2fRxoZtNH34zMNWmI3fjYGI2NdWjGSBjxeAUloym5y0x9Q==",
+  "_location": "/merge-gpx-files-delf01",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "merge-gpx-files-delf01@^1.0.1",
+    "name": "merge-gpx-files-delf01",
+    "escapedName": "merge-gpx-files-delf01",
+    "rawSpec": "^1.0.1",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/merge-gpx-files-delf01/-/merge-gpx-files-delf01-1.0.1.tgz",
+  "_shasum": "401fdb1590ca1bdc5f6910bfe5733e4d29df5893",
+  "_spec": "merge-gpx-files-delf01@^1.0.1",
+  "_where": "D:\\@react\\merge",
+  "author": {
+    "name": "Delphin Bock delf01.development@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/delphinbock/merge-gpx-files-delf01/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "colors": "^1.4.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "deprecated": false,
+  "description": "This package merges multiple gpx files into a single gpx file.",
+  "homepage": "https://github.com/delphinbock/merge-gpx-files-delf01#readme",
+  "keywords": [
+    "gpx",
+    "files",
+    "merge"
+  ],
+  "license": "GPL-3.0-or-later",
+  "main": "merge-gpx-files-delf01",
+  "name": "merge-gpx-files-delf01",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delphinbock/merge-gpx-files-delf01.git"
+  },
+  "scripts": {
+    "test": "mocha tests/**/*Test.js --reporter spec"
+  },
+  "version": "1.0.7"
+}
