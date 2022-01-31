@@ -9,7 +9,7 @@ It's a NodeJS module (>= v14.18.0, not tested for earlier versions) that merges 
 
 # Video installation
 
-[![Demo video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/rN-PVW-XvSo)
+[![Demo video](https://img.youtube.com/vi/rN-PVW-XvSo/maxresdefault.jpg)](https://youtu.be/rN-PVW-XvSo)
 
 # Installation
 
