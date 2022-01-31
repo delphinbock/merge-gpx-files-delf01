@@ -1,6 +1,6 @@
 # merge-gpx-files-delf01
 
-Merges multiple gpx files into a single gpx file. 
+It's a NodeJS module (>= v14.18.0, not tested for earlier versions) that merges multiple gpx files into a single gpx file.
 
 1. Install the module by typing the following command in the terminal console: `npm install merge-gpx-files-delf01 --save`
 
@@ -8,7 +8,7 @@ Merges multiple gpx files into a single gpx file.
 
 3. Get the code in the example section and follow the next steps.
 
-4. Configure the name of the folder that will contain the multiple gpx files. 
+4. Configure the name of the folder that will contain the multiple gpx files.
 Set the property called `nameDirectoryGpxFiles` of the settings object called `paramsObj`.
 
 5. Configure the name of the folder that will contain the merged single gpx file.
@@ -19,7 +19,8 @@ Set the property called `nameSingleGpxFile` of the settings object called `param
 The merge creates two files. A minified file whose name is formatted as follows: 'filename_UID.min.gpx' (ex: singleFile_972e9e14-f48e-4d63-abc7-5db6c99d2570.min.gpx) and an indented file whose name is formatted as follows: 'filename_UID. gpx' (ex: singleFile_972e9e14-f48e-4d63-abc7-5db6c99d2570.gpx).
 
 7. Configure file character encoding type (UCS Transformation Format).
-Set the property called  'encodageGpxFile' of the settings object called 'paramsObj'. 
+
+Set the property called  'encodageGpxFile' of the settings object called 'paramsObj'.
 By default leave utf8.
 
 8. Configure metadata settings object. Metadata is added to the merged gpx file.
@@ -43,11 +44,13 @@ Output -> On success => object => {minFile: minFileContentString, file: fileCont
 11. The two merged files (indented and minified) is now in the results folder configured in step 5.
 
 ## Example 1
+// NPM
+const mergeGpxFilesDelf01 = require('merge-gpx-files-delf01');
 
 ```javascript
 // Params object
 const paramsObj = {
-    nameSingleGpxFile: `singleFile`, 
+    nameSingleGpxFile: `singleFile`,
     nameDirectoryGpxFiles: `gpx_files`,
     nameDirectorySingleGpxFiles: `single_files`,
     encodageGpxFile: `utf8`
@@ -63,9 +66,6 @@ const metaDataObj = {
     timeTrackGpxFile: new Intl.DateTimeFormat('en-US', { dateStyle: 'full', timeStyle: 'long' }).format(new Date(Date.UTC(2020, 11, 20, 3, 23, 16, 738))),
     keywordsTrackGpxFile: `pilgrims, gpx, route, spain`
 }
-
-// NPM
-const mergeGpxFilesDelf01 = require('merge-gpx-files-delf01');
 
 // Run function
 mergeGpxFilesDelf01.mergeGpxFiles(paramsObj, metaDataObj);
@@ -74,9 +74,12 @@ mergeGpxFilesDelf01.mergeGpxFiles(paramsObj, metaDataObj);
 ## Example 2
 
 ```javascript
+// NPM
+const mergeGpxFilesDelf01 = require('merge-gpx-files-delf01');
+
 // Params object
 const paramsObj = {
-    nameSingleGpxFile: `singleFile`, 
+    nameSingleGpxFile: `singleFile`,
     nameDirectoryGpxFiles: `gpx_files`,
     nameDirectorySingleGpxFiles: `single_files`,
     encodageGpxFile: `utf8`
@@ -93,16 +96,15 @@ const metaDataObj = {
     keywordsTrackGpxFile: `pilgrims, gpx, route, spain`
 }
 
-// NPM
-const mergeGpxFilesDelf01 = require('merge-gpx-files-delf01');
-
 // Run async function
 const runFunction = async () => {
 
     let mergeSingleFile = await mergeGpxFilesDelf01.mergeGpxFiles(paramsObj, metaDataObj);
 
-    // Output -> On success => object => {minFile: minFileContentString, file: fileContentString}, On error => boolean => false
-    console.log(mergeSingleFile);
+    // Output
+    // On success => object => {minFile: minFileContentString, file: fileContentString}
+    // On error => boolean => false
+
 
     return mergeSingleFile;
 }
