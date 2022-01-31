@@ -7,7 +7,7 @@
 
 It's a NodeJS module (>= v14.18.0, not tested for earlier versions) that merges multiple gpx files into a single gpx file.
 
-# merge-gpx-files-delf01 installation
+# Installation
 
 1. Install the module by typing the following command in the terminal console: `npm install merge-gpx-files-delf01 --save`
 
