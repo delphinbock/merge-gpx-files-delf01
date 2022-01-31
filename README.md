@@ -1,6 +1,6 @@
 # merge-gpx-files-delf01
 
-[![Node version](https://img.shields.io/badge/node->=14.18.0-orange.svg?style=for-the-badge)]()
+[![Node version](https://img.shields.io/badge/node->=14.18.0-orange.svg?style=for-the-badge)](https://nodejs.org/en/about/releases/)
 [![GNU License](https://img.shields.io/badge/license-GNU-blue.svg?style=for-the-badge)](https://www.gnu.org/licenses/gpl-3.0.html)
 [![Documentation](https://img.shields.io/badge/Documentation-github-brightgreen.svg?style=for-the-badge)](https://github.com/delphinbock/merge-gpx-files-delf01/blob/main/README.md)
 
