@@ -44,10 +44,10 @@ Output -> On success => object => {minFile: minFileContentString, file: fileCont
 11. The two merged files (indented and minified) is now in the results folder configured in step 5.
 
 ## Example 1
+```javascript
 // NPM
 const mergeGpxFilesDelf01 = require('merge-gpx-files-delf01');
 
-```javascript
 // Params object
 const paramsObj = {
     nameSingleGpxFile: `singleFile`,
