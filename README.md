@@ -1,5 +1,3 @@
-# merge-gpx-files-delf01
-
 ![image](./merge-gpx-files-delf01.jpg)
 
 [![Node version](https://img.shields.io/badge/node->=14.18.0-orange.svg?style=for-the-badge)](https://nodejs.org/en/about/releases/)
@@ -9,7 +7,7 @@
 
 It's a NodeJS module (>= v14.18.0, not tested for earlier versions) that merges multiple gpx files into a single gpx file.
 
-# Installation
+# merge-gpx-files-delf01 installation
 
 1. Install the module by typing the following command in the terminal console: `npm install merge-gpx-files-delf01 --save`
 
