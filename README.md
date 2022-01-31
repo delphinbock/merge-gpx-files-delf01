@@ -6,6 +6,8 @@ It's a NodeJS module (>= v14.18.0, not tested for earlier versions) that merges 
 
 2. Create a folder, in the root folder of the application, in which the multiple gpx files will be placed. The folder name must be configured in the settings object (step 4).
 
+Gpx files routes examples: [gpx files list](https://github.com/delphinbock/santiago-de-compostela_spain-north-cape_norway_gpx_files.git)
+
 3. Get the code in the example section and follow the next steps.
 
 4. Configure the name of the folder that will contain the multiple gpx files.
@@ -19,7 +21,6 @@ Set the property called `nameSingleGpxFile` of the settings object called `param
 The merge creates two files. A minified file whose name is formatted as follows: 'filename_UID.min.gpx' (ex: singleFile_972e9e14-f48e-4d63-abc7-5db6c99d2570.min.gpx) and an indented file whose name is formatted as follows: 'filename_UID. gpx' (ex: singleFile_972e9e14-f48e-4d63-abc7-5db6c99d2570.gpx).
 
 7. Configure file character encoding type (UCS Transformation Format).
-
 Set the property called  'encodageGpxFile' of the settings object called 'paramsObj'.
 By default leave utf8.
 
