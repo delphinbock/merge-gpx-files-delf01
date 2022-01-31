@@ -10,12 +10,6 @@ It's a NodeJS module (>= v14.18.0, not tested for earlier versions) that merges 
 # Video installation
 
 [![Demo video](https://img.youtube.com/vi/rN-PVW-XvSo/0.jpg)](https://youtu.be/rN-PVW-XvSo)
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
-
-
-https://github.com/delphinbock/merge-gpx-files-delf01/blob/main/video.mp4
-
-Youtube: https://youtu.be/rN-PVW-XvSo
 
 # Installation
 
