@@ -2,6 +2,10 @@
 
 It's a NodeJS module (>= v14.18.0, not tested for earlier versions) that merges multiple gpx files into a single gpx file.
 
+https://user-images.githubusercontent.com/6877923/115474571-03c75800-a23e-11eb-8096-8973aad5fa9f.mp4
+
+# Installation
+
 1. Install the module by typing the following command in the terminal console: `npm install merge-gpx-files-delf01 --save`
 
 2. Create a folder, in the root folder of the application, in which the multiple gpx files will be placed. The folder name must be configured in the settings object (step 4).
