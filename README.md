@@ -7,31 +7,35 @@
 
 It's a NodeJS module (>= v14.18.0, not tested for earlier versions) that merges multiple gpx files into a single gpx file.
 
+# Video installation
+
+https://youtu.be/rN-PVW-XvSo
+
 # Installation
 
 1. Install the module by typing the following command in the terminal console: `npm install merge-gpx-files-delf01 --save`
 
-2. Create a folder, in the root folder of the application, in which the multiple gpx files will be placed. The folder name must be configured in the settings object (step 4).
+2. Create a folder, in the root folder of the application, in which the multiple gpx files will be placed. The folder name must be configured in the settings object (step 5).
 
-Gpx files routes examples: [gpx files list](https://github.com/delphinbock/santiago-de-compostela_spain-north-cape_norway_gpx_files.git)
+3. Place multiple gpx files in the set directory. Here is a lot of gpx files routes examples: [gpx files list](https://github.com/delphinbock/santiago-de-compostela_spain-north-cape_norway_gpx_files.git)
 
-3. Get the code in the example section and follow the next steps.
+4. Get the code in the example section and follow the next steps.
 
-4. Configure the name of the folder that will contain the multiple gpx files.
+5. Configure the name of the folder that will contain the multiple gpx files.
 Set the property called `nameDirectoryGpxFiles` of the settings object called `paramsObj`.
 
-5. Configure the name of the folder that will contain the merged single gpx file.
+6. Configure the name of the folder that will contain the merged single gpx file.
 Set the property called `nameDirectorySingleGpxFiles` of the settings object called `paramsObj`.
 
-6. Configures the merged gpx file name prefix.
+7. Configures the merged gpx file name prefix.
 Set the property called `nameSingleGpxFile` of the settings object called `paramsObj`.
 The merge creates two files. A minified file whose name is formatted as follows: 'filename_UID.min.gpx' (ex: singleFile_972e9e14-f48e-4d63-abc7-5db6c99d2570.min.gpx) and an indented file whose name is formatted as follows: 'filename_UID. gpx' (ex: singleFile_972e9e14-f48e-4d63-abc7-5db6c99d2570.gpx).
 
-7. Configure file character encoding type (UCS Transformation Format).
+8. Configure file character encoding type (UCS Transformation Format).
 Set the property called  'encodageGpxFile' of the settings object called 'paramsObj'.
 By default leave utf8.
 
-8. Configure metadata settings object. Metadata is added to the merged gpx file.
+9. Configure metadata settings object. Metadata is added to the merged gpx file.
 Set the property called  'encodageGpxFile' of the settings object called 'paramsObj'.
 Property:
 `nameCreatorGpxFile` => name of gpx file creator name, 
@@ -42,14 +46,14 @@ Property:
 `timeTrackGpxFile` => date and time the file was created, 
 `keywordsTrackGpxFile` => keywords, each keyword must be separated by a comma, 
 
-9. Import the module `const mergeGpxFilesDelf01 = require('merge-gpx-files-delf01');`
+10. Import the module `const mergeGpxFilesDelf01 = require('merge-gpx-files-delf01');`
 
-9. Pass the two parameter objects to the function and run the function `let mergeSingleFile = await mergeGpxFilesDelf01.mergeGpxFiles(paramsObj, metaDataObj);`
+11. Pass the two parameter objects to the function and run the function `let mergeSingleFile = await mergeGpxFilesDelf01.mergeGpxFiles(paramsObj, metaDataObj);`
 
-10. The asynchronous function returns on a success an object containing the gpx file and the minified gpx file, both formatted as a string and on an error, a boolean false.
+12. The asynchronous function returns on a success an object containing the gpx file and the minified gpx file, both formatted as a string and on an error, a boolean false.
 Output -> On success => object => {minFile: minFileContentString, file: fileContentString}, On error => boolean => false
 
-11. The two merged files (indented and minified) is now in the results folder configured in step 5.
+13. The two merged files (indented and minified) is now in the results folder configured in step 6.
 
 # Use
 ## Example 1
