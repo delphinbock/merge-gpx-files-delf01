@@ -11,6 +11,10 @@ It's a NodeJS module (>= v14.18.0, not tested for earlier versions) that merges 
 
 [![Demo video](https://img.youtube.com/vi/rN-PVW-XvSo/0.jpg)](https://youtu.be/rN-PVW-XvSo)
 
+https://github.com/delphinbock/merge-gpx-files-delf01/blob/main/video.mp4
+
+Youtube: https://youtu.be/rN-PVW-XvSo
+
 # Installation
 
 1. Install the module by typing the following command in the terminal console: `npm install merge-gpx-files-delf01 --save`
