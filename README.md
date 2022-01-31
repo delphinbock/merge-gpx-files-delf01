@@ -1,8 +1,13 @@
 # merge-gpx-files-delf01
 
+[![Node version](https://img.shields.io/badge/license-MIT-orange.svg?style=for-the-badge)]()
+[![GNU License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://www.gnu.org/licenses/gpl-3.0.html)
+[![Documentation](https://img.shields.io/badge/Documentation-github-brightgreen.svg?style=for-the-badge)](https://github.com/delphinbock/merge-gpx-files-delf01/blob/main/README.md)
+
+
 It's a NodeJS module (>= v14.18.0, not tested for earlier versions) that merges multiple gpx files into a single gpx file.
 
-https://user-images.githubusercontent.com/6877923/115474571-03c75800-a23e-11eb-8096-8973aad5fa9f.mp4
+
 
 # Installation
 
@@ -48,6 +53,7 @@ Output -> On success => object => {minFile: minFileContentString, file: fileCont
 
 11. The two merged files (indented and minified) is now in the results folder configured in step 5.
 
+# Use
 ## Example 1
 ```javascript
 // NPM
